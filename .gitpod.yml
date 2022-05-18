@@ -4,10 +4,10 @@
 
 tasks:
   - init: 
-      cargo build
+      cargo build &&
       npm install -g near-cli
     command: 
-      cargo watch -x run
+      cargo watch -x run &&
       rustup target add wasm32-unknown-unknown
 
 
